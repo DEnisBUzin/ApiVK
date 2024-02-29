@@ -33,7 +33,7 @@ logging.basicConfig(level=logging.INFO, filename="py_log.log", filemode="w", enc
 class ApiVKCopyPhoto:
     BASE_URL_VK = 'https://api.vk.com/method'
     BASE_URL_YANDEX = 'https://cloud-api.yandex.net'
-    TOKEN = 'vk1.a.EwfLgnxLjmQasGnbEzsEh1azPKZQhnNzBtDr4dL7NNbypDqBne5SVMj26JO_nT2VgLyIWypMrGrLjjACc_EelbxrY_Rh6sUAMn7ylll6JtEKSCWtR6MzLxXTMpoo_jKduUkZ63XD3Nd81B40lCi4d4w8636Q4ds5eKMhIwHSgzyq6PP5yw7doAtG_3yoHNjL'
+    TOKEN = 'Your Token'
 
     def __init__(self, user_id: int, tokenYandex: str):
         self.token = tokenYandex
@@ -135,7 +135,7 @@ class ApiVKCopyPhoto:
 
 
 if __name__ == '__main__':
-    tokenYandex = 'y0_AgAAAABRbtGzAADLWwAAAAD7zcDpAAAwW56ow4xEqZLaaAmgwKaOlirmLw'
+    tokenYandex = 'Your Token'
     user_id = 120236056
     vk = ApiVKCopyPhoto(user_id, tokenYandex)
     vk.upload_photos_to_disk()
